@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+    ====================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaTech — Tecnologia, inovação e inteligência artificial para transformar ideias em soluções digitais.">
+    <meta name="author" content="NovaTech">
+
+    <title>NovaTech | Tecnologia que transforma</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+
+            <a href="#home" class="logo" aria-label="NovaTech - Página inicial">
+                <span class="logo__icon" aria-hidden="true">NT</span>
+                <span class="logo__text">Nova<span>Tech</span></span>
+            </a>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Início</a></li>
+                    <li class="nav__item"><a href="#solutions" class="nav__link">Soluções</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#technology" class="nav__link">Tecnologia</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contact" class="header__cta">
+                    Fale conosco <span aria-hidden="true">↗</span>
+                </a>
+
+                <button class="menu-toggle" type="button"
+                    aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação mobile">
+            <ul class="mobile-menu__list">
+                <li><a href="#home" class="mobile-menu__link">Início</a></li>
+                <li><a href="#solutions" class="mobile-menu__link">Soluções</a></li>
+                <li><a href="#about" class="mobile-menu__link">Sobre</a></li>
+                <li><a href="#technology" class="mobile-menu__link">Tecnologia</a></li>
+                <li>
+                    <a href="#contact" class="mobile-menu__cta">
+                        Fale conosco <span aria-hidden="true">↗</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <span class="hero__badge-dot" aria-hidden="true"></span>
+                        <span>O futuro começa agora</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        Tecnologia que
+                        <span>transforma</span>
+                        o futuro.
+                    </h1>
+
+                    <p class="hero__description">
+                        Criamos soluções inteligentes que combinam
+                        inteligência artificial, inovação e tecnologia
+                        para transformar ideias em experiências digitais
+                        extraordinárias.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#solutions" class="btn btn--primary">
+                            Explorar soluções <span aria-hidden="true">↗</span>
+                        </a>
+                        <a href="#about" class="btn btn--secondary">
+                            Conheça a NovaTech
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <strong class="hero__stat-number">10+</strong>
+                            <span class="hero__stat-label">Soluções digitais</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong class="hero__stat-number">99%</strong>
+                            <span class="hero__stat-label">Foco em inovação</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong class="hero__stat-number">24/7</strong>
+                            <span class="hero__stat-label">Tecnologia ativa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__visual-wrapper">
+
+                        <img src="assets/Imagem/hero.png"
+                            alt="Visual futurista representando inteligência artificial e tecnologia da NovaTech"
+                            class="hero__image" loading="eager">
+
+                        <div class="hero__glow" aria-hidden="true"></div>
+
+                        <div class="hero__floating-card hero__floating-card--ai">
+                            <div class="floating-card__icon" aria-hidden="true">AI</div>
+                            <div class="floating-card__content">
+                                <span class="floating-card__label">Inteligência Artificial</span>
+                                <strong class="floating-card__status">Sistema otimizado</strong>
+                            </div>
+                            <span class="floating-card__status-dot" aria-label="Sistema online"></span>
+                        </div>
+
+                        <div class="hero__floating-card hero__floating-card--data">
+                            <span class="floating-card__label">Performance</span>
+                            <strong class="floating-card__value">+87.4%</strong>
+                            <span class="floating-card__trend">↗ Crescimento</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#solutions" class="hero__scroll" aria-label="Rolar para a seção de soluções">
+                <span class="hero__scroll-text">Scroll para explorar</span>
+                <span class="hero__scroll-icon" aria-hidden="true">↓</span>
+            </a>
+        </section>
+
+        <!-- =================================================
+             FEATURES / SOLUTIONS
+        ================================================== -->
+        <section class="features" id="solutions">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-header__badge">
+                        <span aria-hidden="true">✦</span>
+                        <span>Nossas soluções</span>
+                    </div>
+
+                    <h2 class="section-header__title">
+                        Tecnologia pensada para
+                        <span>ir além.</span>
+                    </h2>
+
+                    <p class="section-header__description">
+                        Desenvolvemos soluções digitais inteligentes que
+                        combinam tecnologia, criatividade e inteligência
+                        artificial para transformar desafios em oportunidades.
+                    </p>
+                </div>
+
+                <div class="features__grid">
+
+                    <article class="feature-card feature-card--featured">
+                        <div class="feature-card__top">
+                            <span class="feature-card__number">01</span>
+                            <div class="feature-card__icon" aria-hidden="true">✦</div>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Inteligência Artificial</h3>
+                            <p class="feature-card__description">
+                                Utilizamos IA para criar experiências mais inteligentes,
+                                automatizar processos e transformar dados em decisões estratégicas.
+                            </p>
+                        </div>
+                        <a href="#technology" class="feature-card__link"
+                            aria-label="Saiba mais sobre Inteligência Artificial">
+                            <span>Saiba mais</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card__top">
+                            <span class="feature-card__number">02</span>
+                            <div class="feature-card__icon" aria-hidden="true">◈</div>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Experiências Digitais</h3>
+                            <p class="feature-card__description">
+                                Interfaces modernas, intuitivas e responsivas projetadas
+                                para proporcionar experiências digitais memoráveis.
+                            </p>
+                        </div>
+                        <a href="#about" class="feature-card__link"
+                            aria-label="Saiba mais sobre Experiências Digitais">
+                            <span>Saiba mais</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card__top">
+                            <span class="feature-card__number">03</span>
+                            <div class="feature-card__icon" aria-hidden="true">◇</div>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Performance</h3>
+                            <p class="feature-card__description">
+                                Arquiteturas eficientes e tecnologias modernas para entregar
+                                produtos rápidos, escaláveis e preparados para o futuro.
+                            </p>
+                        </div>
+                        <a href="#technology" class="feature-card__link"
+                            aria-label="Saiba mais sobre Performance">
+                            <span>Saiba mais</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card__top">
+                            <span class="feature-card__number">04</span>
+                            <div class="feature-card__icon" aria-hidden="true">◎</div>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Segurança</h3>
+                            <p class="feature-card__description">
+                                Soluções desenvolvidas com foco em segurança, confiabilidade
+                                e proteção dos dados em cada etapa do projeto.
+                            </p>
+                        </div>
+                        <a href="#contact" class="feature-card__link"
+                            aria-label="Saiba mais sobre Segurança">
+                            <span>Saiba mais</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <div class="features__footer">
+                    <p class="features__footer-text">Pronto para transformar sua próxima ideia?</p>
+                    <a href="#contact" class="btn btn--primary">
+                        Começar um projeto <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             ABOUT / INNOVATION
+        ================================================== -->
+        <section class="about" id="about">
+            <div class="container about__container">
+
+                <div class="about__visual">
+                    <div class="about__image-wrapper">
+
+                        <img src="assets/Imagem/feature1.png"
+                            alt="Visual abstrato representando inovação e tecnologia da NovaTech"
+                            class="about__image" loading="lazy">
+
+                        <div class="about__visual-grid" aria-hidden="true"></div>
+                        <div class="about__visual-glow" aria-hidden="true"></div>
+
+                        <div class="about__floating-card">
+                            <span class="about__floating-card-label">Innovation</span>
+                            <strong class="about__floating-card-value">01</strong>
+                            <span class="about__floating-card-text">Pensando além do presente.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="about__content">
+
+                    <div class="section-header__badge">
+                        <span aria-hidden="true">✦</span>
+                        <span>Sobre a NovaTech</span>
+                    </div>
+
+                    <h2 class="about__title">
+                        Não seguimos o futuro.
+                        <span>Nós o construímos.</span>
+                    </h2>
+
+                    <div class="about__text">
+                        <p>A NovaTech nasceu com uma visão simples: transformar tecnologia em possibilidades.</p>
+                        <p>
+                            Unimos inteligência artificial, design e desenvolvimento para criar
+                            experiências digitais capazes de gerar impacto real.
+                        </p>
+                        <p>
+                            Para nós, inovação não significa apenas utilizar novas tecnologias.
+                            Significa encontrar novas formas de resolver problemas, conectar pessoas
+                            e transformar ideias em algo extraordinário.
+                        </p>
+                    </div>
+
+                    <div class="about__principles">
+
+                        <div class="principle">
+                            <span class="principle__icon" aria-hidden="true">◇</span>
+                            <div class="principle__content">
+                                <h3 class="principle__title">Inovação</h3>
+                                <p class="principle__description">
+                                    Exploramos novas tecnologias para criar soluções que estejam sempre um passo à frente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="principle">
+                            <span class="principle__icon" aria-hidden="true">◎</span>
+                            <div class="principle__content">
+                                <h3 class="principle__title">Precisão</h3>
+                                <p class="principle__description">
+                                    Cada detalhe importa. Criamos produtos eficientes, funcionais e cuidadosamente planejados.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="principle">
+                            <span class="principle__icon" aria-hidden="true">↗</span>
+                            <div class="principle__content">
+                                <h3 class="principle__title">Evolução</h3>
+                                <p class="principle__description">
+                                    Construímos pensando no presente, mas sempre preparados para o próximo passo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="about__action">
+                        <a href="#technology" class="btn btn--secondary">
+                            Descubra nossa tecnologia <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             AI SHOWCASE
+        ================================================== -->
+        <section class="ai-showcase" id="technology">
+            <div class="container">
+
+                <div class="section-header section-header--center">
+                    <div class="section-header__badge">
+                        <span aria-hidden="true">✦</span>
+                        <span>NovaTech AI</span>
+                    </div>
+
+                    <h2 class="section-header__title">
+                        Inteligência que
+                        <span>vai além.</span>
+                    </h2>
+
+                    <p class="section-header__description">
+                        Uma nova geração de inteligência artificial criada para transformar dados,
+                        automatizar processos e potencializar decisões.
+                    </p>
+                </div>
+
+                <div class="ai-showcase__wrapper">
+
+                    <div class="ai-showcase__content">
+                        <span class="ai-showcase__eyebrow">AI / 01</span>
+
+                        <h3 class="ai-showcase__title">
+                            Transforme dados em decisões.
+                        </h3>
+
+                        <p class="ai-showcase__description">
+                            Nossa tecnologia analisa grandes volumes de dados, identifica padrões
+                            e transforma informações complexas em insights claros e acionáveis.
+                        </p>
+
+                        <ul class="ai-showcase__features">
+                            <li class="ai-showcase__feature">
+                                <span class="ai-showcase__feature-icon" aria-hidden="true">✓</span>
+                                <span>Análise inteligente de dados</span>
+                            </li>
+                            <li class="ai-showcase__feature">
+                                <span class="ai-showcase__feature-icon" aria-hidden="true">✓</span>
+                                <span>Automação de processos</span>
+                            </li>
+                            <li class="ai-showcase__feature">
+                                <span class="ai-showcase__feature-icon" aria-hidden="true">✓</span>
+                                <span>Insights em tempo real</span>
+                            </li>
+                            <li class="ai-showcase__feature">
+                                <span class="ai-showcase__feature-icon" aria-hidden="true">✓</span>
+                                <span>Modelos inteligentes e adaptáveis</span>
+                            </li>
+                        </ul>
+
+                        <a href="#contact" class="btn btn--primary">
+                            Explorar possibilidades <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="ai-interface">
+
+                        <div class="ai-interface__header">
+                            <div class="ai-interface__status">
+                                <span class="ai-interface__status-dot" aria-hidden="true"></span>
+                                <span>NovaTech Intelligence</span>
+                            </div>
+                            <span class="ai-interface__version">v2.0</span>
+                        </div>
+
+                        <div class="ai-interface__body">
+
+                            <div class="ai-interface__greeting">
+                                <span class="ai-interface__greeting-label">AI Assistant</span>
+                                <h4>Como posso ajudar?</h4>
+                            </div>
+
+                            <div class="ai-interface__metrics">
+
+                                <div class="ai-metric">
+                                    <span class="ai-metric__label">Data Processing</span>
+                                    <strong class="ai-metric__value">98.7%</strong>
+                                    <div class="ai-metric__progress" aria-hidden="true"><span></span></div>
+                                </div>
+
+                                <div class="ai-metric">
+                                    <span class="ai-metric__label">Accuracy</span>
+                                    <strong class="ai-metric__value">99.2%</strong>
+                                    <div class="ai-metric__progress" aria-hidden="true"><span></span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="ai-chart">
+
+                                <div class="ai-chart__header">
+                                    <span>Performance</span>
+                                    <span class="ai-chart__period">Last 30 days</span>
+                                </div>
+
+                                <div class="ai-chart__visual"
+                                    aria-label="Gráfico ilustrativo de crescimento de performance">
+                                    <span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+
+                            </div>
+
+                            <div class="ai-interface__input">
+                                <span class="ai-interface__input-placeholder">
+                                    Pergunte qualquer coisa...
+                                </span>
+                                <button type="button" class="ai-interface__send" aria-label="Enviar pergunta">
+                                    ↗
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-showcase__technologies">
+                    <span class="ai-showcase__technologies-label">
+                        Desenvolvido para evoluir com você
+                    </span>
+
+                    <div class="ai-showcase__technology-list">
+                        <span class="technology-tag">Machine Learning</span>
+                        <span class="technology-tag">Generative AI</span>
+                        <span class="technology-tag">Data Intelligence</span>
+                        <span class="technology-tag">Automation</span>
+                        <span class="technology-tag">Neural Networks</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+        <section class="statistics" id="statistics">
+            <div class="container">
+
+                <div class="section-header section-header--center">
+                    <div class="section-header__badge">
+                        <span aria-hidden="true">✦</span>
+                        <span>NovaTech em números</span>
+                    </div>
+
+                    <h2 class="section-header__title">
+                        Impacto que pode ser
+                        <span>medido.</span>
+                    </h2>
+
+                    <p class="section-header__description">
+                        Tecnologia, inovação e resultados reunidos em números que representam
+                        nossa busca constante por excelência.
+                    </p>
+                </div>
+
+                <div class="statistics__grid">
+
+                    <article class="stat-card">
+                        <div class="stat-card__top">
+                            <span class="stat-card__number">01</span>
+                            <span class="stat-card__icon" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="stat-card__value-wrapper">
+                            <strong class="stat-card__value" data-target="50" data-suffix="+">50+</strong>
+                        </div>
+                        <h3 class="stat-card__title">Projetos desenvolvidos</h3>
+                        <p class="stat-card__description">
+                            Experiências digitais criadas para diferentes desafios e necessidades.
+                        </p>
+                    </article>
+
+                    <article class="stat-card stat-card--featured">
+                        <div class="stat-card__top">
+                            <span class="stat-card__number">02</span>
+                            <span class="stat-card__icon" aria-hidden="true">✦</span>
+                        </div>
+                        <div class="stat-card__value-wrapper">
+                            <strong class="stat-card__value" data-target="99" data-suffix="%">99%</strong>
+                        </div>
+                        <h3 class="stat-card__title">Performance</h3>
+                        <p class="stat-card__description">
+                            Foco em experiências rápidas, eficientes e preparadas para escalar.
+                        </p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card__top">
+                            <span class="stat-card__number">03</span>
+                            <span class="stat-card__icon" aria-hidden="true">◇</span>
+                        </div>
+                        <div class="stat-card__value-wrapper">
+                            <strong class="stat-card__value" data-target="24" data-suffix="/7">24/7</strong>
+                        </div>
+                        <h3 class="stat-card__title">Tecnologia ativa</h3>
+                        <p class="stat-card__description">
+                            Soluções desenvolvidas para operar de forma contínua e confiável.
+                        </p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card__top">
+                            <span class="stat-card__number">04</span>
+                            <span class="stat-card__icon" aria-hidden="true">◎</span>
+                        </div>
+                        <div class="stat-card__value-wrapper">
+                            <strong class="stat-card__value" data-target="100" data-suffix="%">100%</strong>
+                        </div>
+                        <h3 class="stat-card__title">Compromisso</h3>
+                        <p class="stat-card__description">
+                            Cada projeto é pensado para entregar valor, inovação e uma experiência de alto nível.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="statistics__highlight">
+                    <span class="statistics__highlight-icon" aria-hidden="true">✦</span>
+                    <p class="statistics__highlight-text">
+                        “Grandes ideias ganham força quando tecnologia e criatividade trabalham juntas.”
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             TESTIMONIALS
+        ================================================== -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-header__badge">
+                        <span aria-hidden="true">✦</span>
+                        <span>Experiências</span>
+                    </div>
+
+                    <h2 class="section-header__title">
+                        Ideias que se tornam
+                        <span>experiências.</span>
+                    </h2>
+
+                    <p class="section-header__description">
+                        O impacto de uma boa solução vai além da tecnologia.
+                        Ele está na experiência que criamos para quem a utiliza.
+                    </p>
+                </div>
+
+                <div class="testimonials__wrapper">
+
+                    <button type="button"
+                        class="testimonials__control testimonials__control--prev"
+                        aria-label="Depoimento anterior" data-testimonial-prev>
+                        <span aria-hidden="true">←</span>
+                    </button>
+
+                    <div class="testimonials__slider" data-testimonials-slider>
+
+                        <article class="testimonial-card is-active" data-testimonial>
+                            <div class="testimonial-card__header">
+                                <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                                <div class="testimonial-card__rating">
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span class="sr-only">5 de 5 estrelas</span>
+                                </div>
+                            </div>
+
+                            <blockquote class="testimonial-card__text">
+                                A NovaTech conseguiu transformar uma ideia complexa
+                                em uma experiência digital simples, moderna e intuitiva.
+                            </blockquote>
+
+                            <footer class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <span aria-hidden="true">AM</span>
+                                </div>
+                                <div class="testimonial-card__author-info">
+                                    <cite class="testimonial-card__name">Alex Martins</cite>
+                                    <span class="testimonial-card__role">Product Manager</span>
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="testimonial-card" data-testimonial>
+                            <div class="testimonial-card__header">
+                                <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                                <div class="testimonial-card__rating">
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span class="sr-only">5 de 5 estrelas</span>
+                                </div>
+                            </div>
+
+                            <blockquote class="testimonial-card__text">
+                                O projeto superou nossas expectativas. A combinação de design,
+                                performance e tecnologia fez toda a diferença no resultado final.
+                            </blockquote>
+
+                            <footer class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <span aria-hidden="true">LC</span>
+                                </div>
+                                <div class="testimonial-card__author-info">
+                                    <cite class="testimonial-card__name">Lucas Costa</cite>
+                                    <span class="testimonial-card__role">Creative Director</span>
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="testimonial-card" data-testimonial>
+                            <div class="testimonial-card__header">
+                                <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                                <div class="testimonial-card__rating">
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span aria-hidden="true">★</span>
+                                    <span class="sr-only">5 de 5 estrelas</span>
+                                </div>
+                            </div>
+
+                            <blockquote class="testimonial-card__text">
+                                Trabalhar com tecnologia nunca pareceu tão simples.
+                                A solução trouxe eficiência e uma experiência muito melhor para nossa equipe.
+                            </blockquote>
+
+                            <footer class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <span aria-hidden="true">RS</span>
+                                </div>
+                                <div class="testimonial-card__author-info">
+                                    <cite class="testimonial-card__name">Rafael Silva</cite>
+                                    <span class="testimonial-card__role">Founder &amp; CEO</span>
+                                </div>
+                            </footer>
+                        </article>
+
+                    </div>
+
+                    <button type="button"
+                        class="testimonials__control testimonials__control--next"
+                        aria-label="Próximo depoimento" data-testimonial-next>
+                        <span aria-hidden="true">→</span>
+                    </button>
+
+                </div>
+
+                <div class="testimonials__navigation" aria-label="Navegação dos depoimentos">
+                    <button type="button" class="testimonial-dot is-active"
+                        aria-label="Mostrar depoimento 1" aria-current="true"
+                        data-testimonial-dot="0"></button>
+
+                    <button type="button" class="testimonial-dot"
+                        aria-label="Mostrar depoimento 2" aria-current="false"
+                        data-testimonial-dot="1"></button>
+
+                    <button type="button" class="testimonial-dot"
+                        aria-label="Mostrar depoimento 3" aria-current="false"
+                        data-testimonial-dot="2"></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+        <section class="final-cta" id="contact">
+            <div class="container">
+
+                <div class="final-cta__wrapper">
+
+                    <div class="final-cta__background" aria-hidden="true">
+                        <div class="final-cta__orb final-cta__orb--one"></div>
+                        <div class="final-cta__orb final-cta__orb--two"></div>
+                        <div class="final-cta__grid"></div>
+                    </div>
+
+                    <div class="final-cta__content">
+
+                        <div class="section-header__badge">
+                            <span aria-hidden="true">✦</span>
+                            <span>Vamos criar o futuro</span>
+                        </div>
+
+                        <h2 class="final-cta__title">
+                            Sua próxima grande ideia
+                            <span>começa aqui.</span>
+                        </h2>
+
+                        <p class="final-cta__description">
+                            Transforme sua visão em uma experiência digital extraordinária.
+                            Vamos construir algo inovador, inteligente e preparado para o futuro.
+                        </p>
+
+                        <div class="final-cta__actions">
+                            <a href="mailto:hello@novatech.com" class="btn btn--primary">
+                                Iniciar um projeto <span aria-hidden="true">↗</span>
+                            </a>
+                            <a href="#home" class="btn btn--secondary">
+                                Voltar ao início <span aria-hidden="true">↑</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="final-cta__visual" aria-hidden="true">
+                        <div class="final-cta__visual-ring final-cta__visual-ring--outer"></div>
+                        <div class="final-cta__visual-ring final-cta__visual-ring--middle"></div>
+                        <div class="final-cta__visual-ring final-cta__visual-ring--inner">
+                            <span class="final-cta__visual-symbol">✦</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__main">
+
+                <div class="footer__brand">
+
+                    <a href="#home" class="logo footer__logo"
+                        aria-label="NovaTech - Página inicial">
+                        <span class="logo__icon" aria-hidden="true">NT</span>
+                        <span class="logo__text">Nova<span>Tech</span></span>
+                    </a>
+
+                    <p class="footer__description">
+                        Tecnologia, inteligência e inovação para construir
+                        as experiências digitais do futuro.
+                    </p>
+
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="NovaTech no Instagram">
+                            <span aria-hidden="true">IG</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="NovaTech no LinkedIn">
+                            <span aria-hidden="true">in</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="NovaTech no GitHub">
+                            <span aria-hidden="true">GH</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="NovaTech no X">
+                            <span aria-hidden="true">𝕏</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Navegação</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#solutions">Soluções</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#technology">Tecnologia</a></li>
+                        <li><a href="#testimonials">Experiências</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Soluções</h3>
+                    <ul class="footer__links">
+                        <li><a href="#solutions">Inteligência Artificial</a></li>
+                        <li><a href="#solutions">Experiências Digitais</a></li>
+                        <li><a href="#solutions">Performance</a></li>
+                        <li><a href="#solutions">Segurança</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column footer__column--contact">
+                    <h3 class="footer__title">Vamos conversar</h3>
+                    <p class="footer__contact-text">
+                        Tem uma ideia ou projeto em mente? Entre em contato com nossa equipe.
+                    </p>
+                    <a href="mailto:hello@novatech.com" class="footer__email">
+                        hello@novatech.com <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 NovaTech. Todos os direitos reservados.
+                </p>
+
+                <div class="footer__legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+
+                <a href="#home" class="footer__back-top" aria-label="Voltar ao topo">
+                    <span aria-hidden="true">↑</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
